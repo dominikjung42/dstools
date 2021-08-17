@@ -1,6 +1,6 @@
 Package: dstools
 Type: Package
-Title: Toolbox for building and developping decision support systems with R
+Title: Toolbox for building and developing decision support systems with R
 Version: 1.0.0
 Authors@R: person("Dominik", "Jung", email = "dominikjung42@gmail.com",
   role = c("aut", "cre"))

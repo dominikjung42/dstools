@@ -6,5 +6,5 @@ This package contains algorithms and tools to develop decision support systems.
 
 ```R
 # Install the development version from GitHub
-devtools::install_github("hadley/babynames")
+devtools::install_github("dominikjung42/dstools")
 ```
