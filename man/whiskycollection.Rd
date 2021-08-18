@@ -3,33 +3,23 @@
 \docType{data}
 \name{whiskycollection}
 \alias{whiskycollection}
-\title{Arabidopsis QTL data on gravitropism}
+\title{Collection of popular whiskies}
 \format{
-A data frame with NNNN rows and NN variables:
+A data frame with 3 rows and 2 variables:
 \describe{
-  \item{Name}{Anonymized Mechanical Turk Worker ID}
-  \item{Rating}{Trial number, from 1..NNN}
+  \item{Name}{Name of the whisky}
+  \item{Rating}{My personal rating, if available}
   ...
 }
-}
-\source{
-\href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 }
 \usage{
 data(whiskycollection)
 }
 \description{
-Data from a QTL experiment on gravitropism in
-Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-Cvi). The outcome is the root tip angle (in degrees) at two-minute
-increments over eight hours.
+Data about popular whiskies around the world
 }
 \examples{
 data(whiskycollection)
 \donttest{plot(whiskycollection)}
-}
-\references{
-Moore et al. (2013) Genetics 195:1077-1086
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
 }
 \keyword{datasets}
