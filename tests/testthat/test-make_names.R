@@ -1,8 +1,37 @@
-test_that("make_names does not formats column names correctly", {
-  df_messy_col_names <- data.frame(small_letters = c(1))
-  df_perfect_col_names <- data.frame(SMALL_LETTERS = c(1))
+test_that("make_names() doesn't clean column names correctly", {
+  messy_col_names <- c("X   ", "_X_", ".X.", "__X__", "..X..", "_")
+  df_messy_col_names <- data.frame(matrix(ncol = length(messy_col_names), nrow = 0))
+  colnames(df_messy_col_names) <- messy_col_names
 
-  df_cleaned_col_names <- make_names(df_messy_col_names)
-  expect_equal(df_perfect_col_names, df_cleaned_col_names)
+  correct_col_names <- c("X","X1","X2","X3","X4","X5")
+  df_correct_col_names <- data.frame(matrix(ncol = length(messy_col_names), nrow = 0))
+  colnames(df_correct_col_names) <- correct_col_names
+
+  df_cleaned_col_names <- make_names(df = df_messy_col_names)
+  expect_equal(correct_col_names, colnames(df_cleaned_col_names))
 })
+
+test_that("make_names() doesn't format column names typography correctly", {
+  messy_col_names <- c("XXX", "xxx")
+  df_messy_col_names <- data.frame(matrix(ncol = length(messy_col_names), nrow = 0))
+  colnames(df_messy_col_names) <- messy_col_names
+
+  # Check small letter formating
+  correct_col_names <- c("xxx","xxx")
+  df_correct_col_names <- data.frame(matrix(ncol = length(messy_col_names), nrow = 0))
+  colnames(df_correct_col_names) <- correct_col_names
+
+  df_cleaned_col_names <- make_names(df = df_messy_col_names, typo = "small")
+  expect_equal(correct_col_names, colnames(df_cleaned_col_names))
+
+  # Check capital letter formating
+  correct_col_names <- c("XXX","XXX")
+  df_correct_col_names <- data.frame(matrix(ncol = length(messy_col_names), nrow = 0))
+  colnames(df_correct_col_names) <- correct_col_names
+
+  df_cleaned_col_names <- make_names(df = df_messy_col_names, typo = "capital")
+  expect_equal(correct_col_names, colnames(df_cleaned_col_names))
+})
+
+
 
