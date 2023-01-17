@@ -1,20 +1,30 @@
 Package: dstools
 Type: Package
-Title: Toolbox for building and developing decision support systems with R
+Title: Toolbox for designing and developing decision support systems
 Version: 1.0.0
-Authors@R: person("Dominik", "Jung", email = "dominikjung42@gmail.com",
+Authors@R: person("Dominik", "Jung", email = "dominik.jung42@gmail.com",
   role = c("aut", "cre"))
-Maintainer: Dr. Dominik Jung <dominikjung42@gmail.de>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-Depends: R (>= 3.1.0)
+Maintainer: Dominik Jung <dominik.jung42@gmail.de>
+Description: The dstools package (short for Decision Support Tools) contains
+    functions from analytics, statistics and decision theory to streamline 
+    the development of decision support and business analytics systems.
+    Furthermore it contains many helper functions, datasets and coloursets
+    that will enhance the functionalities of your R systems for decision support
+    and intelligence like e.g. recommender systems, dashboards or other
+    interactive reportings.
+Depends: R (>= 3.5.0)
 Imports:
     dplyr (>= 0.3.0.1),
     ggplot2 (>= 0.1.0.1),
-    magrittr
+    magrittr,
+    readxl,
+    purrr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2
 Suggests: 
+    rmarkdown,
+    knitr,
     testthat
+VignetteBuilder: knitr

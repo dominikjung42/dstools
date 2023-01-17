@@ -1,8 +1,6 @@
 ## code to prepare `whiskycollection` dataset goes here
-whiskycollection <- readxl::read_excel("data-raw/whiskycollection.xlsx") %>%
+whisky_collection <- readxl::read_excel("data-raw/whiskycollection.xlsx") %>%
   as.data.frame()
 
-usethis::use_data(whiskycollection, overwrite = TRUE)
-
-
+usethis::use_data(whisky_collection, overwrite = TRUE)
 
