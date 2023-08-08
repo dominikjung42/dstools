@@ -17,5 +17,5 @@ Normalize your data
 }
 \examples{
 data(whisky_collection)
-whisky_collection$Rating <- normalize(whisky_collection$Rating)
+whisky_collection$RATING <- normalize(whisky_collection$RATING)
 }

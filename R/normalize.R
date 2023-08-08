@@ -9,7 +9,7 @@
 #'
 #' @examples
 #' data(whisky_collection)
-#' whisky_collection$Rating <- normalize(whisky_collection$Rating)
+#' whisky_collection$RATING <- normalize(whisky_collection$RATING)
 normalize <- function(x) {
   df <- as.numeric((x - min(x, na.rm = TRUE))/(max(x, na.rm = TRUE) - min(x, na.rm = TRUE)))
     return(df)

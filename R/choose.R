@@ -6,7 +6,7 @@
 #' @param n number of choices (sample size)
 #' @param replace sample with replacement or not. Default is FALSE.
 #'
-#' @return
+#' @return object
 #' @export
 #'
 #' @examples
@@ -35,7 +35,7 @@ choose <- function(x=NULL, n=1, replace=FALSE){
 #' @param n sample size
 #' @param replace sample with replacement or not
 #'
-#' @return
+#' @return list
 #' @keywords internal
 .choose_from_list <- function(x=x, n=n, replace=replace){
   if (n > length(x)) {
@@ -53,7 +53,7 @@ choose <- function(x=NULL, n=1, replace=FALSE){
 #' @param n sample size
 #' @param replace sample with replacement or not
 #'
-#' @return
+#' @return data frame
 #' @keywords internal
 .choose_from_df <- function(x=x, n=n, replace=replace){
   if (n > nrow(x)) {

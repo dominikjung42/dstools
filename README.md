@@ -1,6 +1,6 @@
 # dstools
 
-This package contains algorithms and tools to develop decision support systems.
+The dstools package (short for Data Science Tools) contains functions from analytics, statistics and decision theory to streamline the development of decision support and business analytics systems. Furthermore it contains many helper functions, datasets and coloursets that will enhance the functionalities of your R systems for decision support and intelligence like e.g. recommender systems, dashboards or other interactive reportings.
 
 ## Installation
 

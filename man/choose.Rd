@@ -14,7 +14,7 @@ choose(x = NULL, n = 1, replace = FALSE)
 \item{replace}{sample with replacement or not. Default is FALSE.}
 }
 \value{
-
+object
 }
 \description{
 This function allows you to choose easily random elements of your dataset.

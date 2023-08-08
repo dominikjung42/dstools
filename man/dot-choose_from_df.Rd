@@ -14,7 +14,7 @@
 \item{replace}{sample with replacement or not}
 }
 \value{
-
+data frame
 }
 \description{
 Internal function - Samples data frames

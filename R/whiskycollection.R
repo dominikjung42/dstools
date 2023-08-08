@@ -11,20 +11,20 @@
 #'
 #' @format A data.frame with 40 rows and 14 variables:
 #' \describe{
-#'   \item{Name}{Name of the whisky}
-#'   \item{Distillery}{Distiller of the specific whisky}
-#'   \item{Location}{Production location of the whisky (mostly countries or regions)}
-#'   \item{Type}{Specification of the whisky type like e.g. single malt or blended}
-#'   \item{Region}{Region of the whisky production (mostly relevant for scotchs)}
-#'   \item{Foundation}{Year of the first whisky production}
-#'   \item{Coordinates}{Longitude and latitude values of the distillery}
-#'   \item{Wikipedia}{Link to the related article of the English Wikipedia}
-#'   \item{Rating}{My personal rating of this whisky. I am open to discuss it, just write me an email if you see it otherwise ;-)}
-#'   \item{Reviews}{The average rating of this whisky based on consumer reviews from many whisky online shops in 2023}
-#'   \item{Critiques}{The average rating of this whisky based on reviews from professional critics until 2023}
-#'   \item{Smokness}{My measure of how smoky vs. delicate it tastes, negative values implicate delicate}
-#'   \item{Richness}{My measure of how rich vs. light it tastes, negative values implicate light}
-#'   \item{Price}{The average price level in Euro of the youngest 10/12 year or consumer version in the whiskyexchange 2023}
+#'   \item{NAME}{Name of the whisky}
+#'   \item{DISTILLERY}{Distiller of the specific whisky}
+#'   \item{LOCATION}{Production location of the whisky (mostly countries or regions)}
+#'   \item{TYPE}{Specification of the whisky type like e.g. single malt or blended}
+#'   \item{REGION}{Region of the whisky production (mostly relevant for scotchs)}
+#'   \item{FOUNDATION}{Year of the first whisky production}
+#'   \item{COORDINATES}{Longitude and latitude values of the distillery}
+#'   \item{WIKIPEDIA}{Link to the related article of the English Wikipedia}
+#'   \item{RATING}{My personal rating of this whisky. I am open to discuss it, just write me an email if you see it otherwise ;-)}
+#'   \item{REVIEWS}{The average rating of this whisky based on consumer reviews from many whisky online shops in 2023}
+#'   \item{CRITIQUES}{The average rating of this whisky based on reviews from professional critics until 2023}
+#'   \item{SMOKENESS}{My measure of how smoky vs. delicate it tastes, negative values implicate delicate}
+#'   \item{RICHNESS}{My measure of how rich vs. light it tastes, negative values implicate light}
+#'   \item{PRICE}{The average price level in Euro of the youngest 10/12 year or consumer version in the whiskyexchange 2023}
 #' }
 #'
 #' @keywords datasets
@@ -33,7 +33,7 @@
 #' data(whisky_collection)
 #' \donttest{
 #' library("ggplot2")
-#' ggplot(whisky_collection, aes(x=Name, y=Rating, fill=Rating)) +
+#' ggplot(whisky_collection, aes(x=NAME, y=RATING, fill=RATING)) +
 #' geom_bar(stat="identity") +
 #' coord_flip() +
 #' xlab("")

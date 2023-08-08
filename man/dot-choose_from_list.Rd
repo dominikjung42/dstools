@@ -14,7 +14,7 @@
 \item{replace}{sample with replacement or not}
 }
 \value{
-
+list
 }
 \description{
 Internal function - Sampels lists

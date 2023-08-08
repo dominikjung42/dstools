@@ -1,11 +1,11 @@
 Package: dstools
 Type: Package
-Title: Toolbox for designing and developing decision support systems
+Title: Toolbox for data science and business data analytics
 Version: 1.0.0
 Authors@R: person("Dominik", "Jung", email = "dominik.jung42@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Dominik Jung <dominik.jung42@gmail.de>
-Description: The dstools package (short for Decision Support Tools) contains
+Description: The dstools package (short for Data Science Tools) contains
     functions from analytics, statistics and decision theory to streamline 
     the development of decision support and business analytics systems.
     Furthermore it contains many helper functions, datasets and coloursets
@@ -14,6 +14,7 @@ Description: The dstools package (short for Decision Support Tools) contains
     interactive reportings.
 Depends: R (>= 3.5.0)
 Imports:
+    arules,
     dplyr (>= 0.3.0.1),
     ggplot2 (>= 0.1.0.1),
     magrittr,
@@ -22,7 +23,7 @@ Imports:
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Suggests: 
     rmarkdown,
     knitr,
