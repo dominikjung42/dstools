@@ -1,7 +1,7 @@
 Package: dstools
 Type: Package
 Title: Toolbox for data science and business data analytics
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Dominik", "Jung", email = "dominik.jung42@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Dominik Jung <dominik.jung42@gmail.de>

@@ -3,7 +3,7 @@
 \docType{data}
 \name{supermarket}
 \alias{supermarket}
-\title{Dataset with a transaction log sample from the Junglivet onlineshop}
+\title{Dataset with a transaction data for association  analysis from a local supermarket}
 \format{
 A transaction set with 9835 transactions aggregated to 170 categories:
 \describe{
