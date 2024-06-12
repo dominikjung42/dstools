@@ -2,9 +2,9 @@ Package: dstools
 Type: Package
 Title: Toolbox for data science and business data analytics
 Version: 1.0.1
-Authors@R: person("Dominik", "Jung", email = "dominik.jung42@gmail.com",
+Authors@R: person("Dominik", "Jung", email = "dominik.jung@junglivet.com",
   role = c("aut", "cre"))
-Maintainer: Dominik Jung <dominik.jung42@gmail.de>
+Maintainer: Dominik Jung <dominik.jung@junglivet.com>
 Description: The dstools package (short for Data Science Tools) contains
     functions from analytics, statistics and decision theory to streamline 
     the development of decision support and business analytics systems.
